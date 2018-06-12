@@ -4,4 +4,9 @@ require_once './HtmlBuilder.php';
 
 $hb = new HtmlBuilder();
 
-$hb->html()->html()->h1()->text('hoge')->h1()->text('piyo')->append();
+$hb
+->html()
+    ->head()
+        ->title()->text('タイトルです！')
+    ->body()
+        ->h1()->text('本文です！')->append();

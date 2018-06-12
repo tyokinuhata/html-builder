@@ -22,7 +22,7 @@ class HtmlBuilder
     private function arrayTextNodeInsert($text)
     {
         array_splice($this->element, $this->pointer, 0, $text);
-        $this->pointer += 2;
+        $this->pointer += 3;
         return $this;
     }
 
@@ -35,6 +35,24 @@ class HtmlBuilder
     public function html()
     {
         $this->arrayElementInsert('html');
+        return $this;
+    }
+
+    public function head()
+    {
+        $this->arrayElementInsert('head');
+        return $this;
+    }
+
+    public function body()
+    {
+        $this->arrayElementInsert('body');
+        return $this;
+    }
+
+    public function title()
+    {
+        $this->arrayElementInsert('title');
         return $this;
     }
 
