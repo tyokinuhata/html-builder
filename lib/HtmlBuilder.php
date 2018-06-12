@@ -1,5 +1,7 @@
 <?php
 
+namespace HtmlBuilder;
+
 class HtmlBuilder
 {
     private $element;

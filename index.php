@@ -1,8 +1,8 @@
 <?php
 
-require_once './HtmlBuilder.php';
+require_once 'vendor/autoload.php';
 
-$hb = new HtmlBuilder();
+$hb = new HtmlBuilder\HtmlBuilder();
 
 $hb
 ->html()
