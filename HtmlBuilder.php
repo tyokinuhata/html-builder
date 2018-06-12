@@ -22,7 +22,13 @@ class HtmlBuilder
     private function arrayTextNodeInsert($text)
     {
         array_splice($this->element, $this->pointer, 0, $text);
-        $this->pointer += 3;
+        $this->pointer += 2;
+        return $this;
+    }
+
+    public function out()
+    {
+        $this->pointer++;
         return $this;
     }
 
