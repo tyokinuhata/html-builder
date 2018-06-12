@@ -4,4 +4,4 @@ require_once './HtmlBuilder.php';
 
 $hb = new HtmlBuilder();
 
-$hb->h1('hoge')->h1('piyo')->append();
+$hb->html()->html()->h1()->text('hoge')->h1()->text('piyo')->append();
