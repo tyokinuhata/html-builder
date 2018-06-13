@@ -91,4 +91,5 @@ class HtmlBuilder
     use Section;
     use Content;
     use Text;
+    use Embedded;
 }
