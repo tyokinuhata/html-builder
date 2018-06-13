@@ -86,7 +86,9 @@ class HtmlBuilder
         }
     }
 
-    use Foundation;
+    use Root;
+    use Meta;
     use Section;
     use Content;
+    use Text;
 }

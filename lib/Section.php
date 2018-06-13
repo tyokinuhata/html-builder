@@ -5,6 +5,16 @@ namespace HtmlBuilder;
 trait Section
 {
     /**
+     * body要素を渡します
+     * @return $this
+     */
+    public function body()
+    {
+        $this->arrayElementsInsert('body');
+        return $this;
+    }
+
+    /**
      * h1要素を渡します
      * @return $this
      */
