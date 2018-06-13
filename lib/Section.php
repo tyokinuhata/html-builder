@@ -2,10 +2,14 @@
 
 namespace HtmlBuilder;
 
+/**
+ * セクション関連のトレイト
+ * @package HtmlBuilder
+ */
 trait Section
 {
     /**
-     * body要素を渡します
+     * body要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -16,7 +20,7 @@ trait Section
     }
 
     /**
-     * section要素を渡します
+     * section要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -27,7 +31,7 @@ trait Section
     }
 
     /**
-     * nav要素を渡します
+     * nav要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -38,7 +42,7 @@ trait Section
     }
 
     /**
-     * article要素を渡します
+     * article要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -49,7 +53,7 @@ trait Section
     }
 
     /**
-     * aside要素を渡します
+     * aside要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -60,7 +64,7 @@ trait Section
     }
 
     /**
-     * h1要素を渡します
+     * h1要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -71,7 +75,7 @@ trait Section
     }
 
     /**
-     * h2要素を渡します
+     * h2要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -82,7 +86,7 @@ trait Section
     }
 
     /**
-     * h3要素を渡します
+     * h3要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -93,7 +97,7 @@ trait Section
     }
 
     /**
-     * h4要素を渡します
+     * h4要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -104,7 +108,7 @@ trait Section
     }
 
     /**
-     * h5要素を渡します
+     * h5要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -115,7 +119,7 @@ trait Section
     }
 
     /**
-     * h6要素を渡します
+     * h6要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -126,7 +130,7 @@ trait Section
     }
 
     /**
-     * header要素を渡します
+     * header要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -137,7 +141,7 @@ trait Section
     }
 
     /**
-     * footer要素を渡します
+     * footer要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */

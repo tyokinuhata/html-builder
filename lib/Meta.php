@@ -2,10 +2,14 @@
 
 namespace HtmlBuilder;
 
+/**
+ * 文書のメタデータ関連のトレイト
+ * @package HtmlBuilder
+ */
 trait Meta
 {
     /**
-     * head要素を渡します
+     * head要素をバッファに渡します
      * @return $this
      */
     public function head()
@@ -15,7 +19,7 @@ trait Meta
     }
 
     /**
-     * title要素を渡します
+     * title要素をバッファに渡します
      * @return $this
      */
     public function title()
@@ -25,7 +29,7 @@ trait Meta
     }
 
     /**
-     * meta要素を渡します
+     * meta要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */

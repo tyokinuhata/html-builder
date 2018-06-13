@@ -2,10 +2,14 @@
 
 namespace HtmlBuilder;
 
+/**
+ * テキスト関連のトレイト
+ * @package HtmlBuilder
+ */
 trait Text
 {
     /**
-     * a要素を渡します
+     * a要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -16,7 +20,7 @@ trait Text
     }
 
     /**
-     * strong要素を渡します
+     * strong要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -27,7 +31,7 @@ trait Text
     }
 
     /**
-     * sub要素を渡します
+     * sub要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -38,7 +42,7 @@ trait Text
     }
 
     /**
-     * sup要素を渡します
+     * sup要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -49,7 +53,7 @@ trait Text
     }
 
     /**
-     * i要素を渡します
+     * i要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -60,7 +64,7 @@ trait Text
     }
 
     /**
-     * b要素を渡します
+     * b要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -71,7 +75,7 @@ trait Text
     }
 
     /**
-     * span要素を渡します
+     * span要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -82,7 +86,7 @@ trait Text
     }
 
     /**
-     * br要素を渡します
+     * br要素をバッファに渡します
      * @return $this
      */
     public function br()
@@ -92,7 +96,7 @@ trait Text
     }
 
     /**
-     * wbr要素を渡します
+     * wbr要素をバッファに渡します
      * @return $this
      */
     public function wbr()
@@ -102,7 +106,7 @@ trait Text
     }
 
     /**
-     * テキストを受け取り, 渡します
+     * テキストを受け取り, バッファに渡します
      * @param $text
      * @return $this
      */

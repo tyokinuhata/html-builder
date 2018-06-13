@@ -2,10 +2,14 @@
 
 namespace HtmlBuilder;
 
+/**
+ * コンテンツの埋め込み関連のトレイト
+ * @package HtmlBuilder
+ */
 trait Embedded
 {
     /**
-     * img要素を渡します
+     * img要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */

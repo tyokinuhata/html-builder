@@ -2,10 +2,14 @@
 
 namespace HtmlBuilder;
 
+/**
+ * 根本となる要素のトレイト
+ * @package HtmlBuilder
+ */
 trait Root
 {
     /**
-     * html要素を渡します
+     * html要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */

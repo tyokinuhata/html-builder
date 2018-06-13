@@ -2,10 +2,14 @@
 
 namespace HtmlBuilder;
 
+/**
+ * フォーム関連のトレイト
+ * @package HtmlBuilder
+ */
 trait Form
 {
     /**
-     * form要素を渡します
+     * form要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -16,7 +20,7 @@ trait Form
     }
 
     /**
-     * label要素を渡します
+     * label要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -27,7 +31,7 @@ trait Form
     }
 
     /**
-     * input要素を渡します
+     * input要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -38,7 +42,7 @@ trait Form
     }
 
     /**
-     * button要素を渡します
+     * button要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -49,7 +53,7 @@ trait Form
     }
 
     /**
-     * select要素を渡します
+     * select要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -60,7 +64,7 @@ trait Form
     }
 
     /**
-     * option要素を渡します
+     * option要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -71,7 +75,7 @@ trait Form
     }
 
     /**
-     * textarea要素を渡します
+     * textarea要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */

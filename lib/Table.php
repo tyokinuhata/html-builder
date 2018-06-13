@@ -2,10 +2,14 @@
 
 namespace HtmlBuilder;
 
+/**
+ * テーブル関連のトレイト
+ * @package HtmlBuilder
+ */
 trait Table
 {
     /**
-     * table要素を渡します
+     * table要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -16,7 +20,7 @@ trait Table
     }
 
     /**
-     * caption要素を渡します
+     * caption要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -27,7 +31,7 @@ trait Table
     }
 
     /**
-     * col要素を渡します
+     * col要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -38,7 +42,7 @@ trait Table
     }
 
     /**
-     * tbody要素を渡します
+     * tbody要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -49,7 +53,7 @@ trait Table
     }
 
     /**
-     * thead要素を渡します
+     * thead要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -60,7 +64,7 @@ trait Table
     }
 
     /**
-     * tfoot要素を渡します
+     * tfoot要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -71,7 +75,7 @@ trait Table
     }
 
     /**
-     * tr要素を渡します
+     * tr要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -82,7 +86,7 @@ trait Table
     }
 
     /**
-     * td要素を渡します
+     * td要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -93,7 +97,7 @@ trait Table
     }
 
     /**
-     * th要素を渡します
+     * th要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */

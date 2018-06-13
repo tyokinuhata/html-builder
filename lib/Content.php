@@ -2,10 +2,14 @@
 
 namespace HtmlBuilder;
 
+/**
+ * コンテンツの分類関連のトレイト
+ * @package HtmlBuilder
+ */
 trait Content
 {
     /**
-     * p要素を渡します
+     * p要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -16,7 +20,7 @@ trait Content
     }
 
     /**
-     * hr要素を渡します
+     * hr要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -27,7 +31,7 @@ trait Content
     }
 
     /**
-     * pre要素を渡します
+     * pre要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -38,7 +42,7 @@ trait Content
     }
 
     /**
-     * ol要素を渡します
+     * ol要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -49,7 +53,7 @@ trait Content
     }
 
     /**
-     * ul要素を渡します
+     * ul要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -60,7 +64,7 @@ trait Content
     }
 
     /**
-     * li要素を渡します
+     * li要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -71,7 +75,7 @@ trait Content
     }
 
     /**
-     * dl要素を渡します
+     * dl要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -82,7 +86,7 @@ trait Content
     }
 
     /**
-     * dt要素を渡します
+     * dt要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -93,7 +97,7 @@ trait Content
     }
 
     /**
-     * dd要素を渡します
+     * dd要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -104,7 +108,7 @@ trait Content
     }
 
     /**
-     * div要素を渡します
+     * div要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
@@ -115,7 +119,7 @@ trait Content
     }
 
     /**
-     * main要素を渡します
+     * main要素をバッファに渡します
      * @param array ...$options
      * @return $this
      */
