@@ -6,131 +6,144 @@ trait Section
 {
     /**
      * body要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function body()
+    public function body(...$options)
     {
-        $this->arrayElementsInsert('body');
+        $this->arrayElementsInsert('body', ...$options);
         return $this;
     }
 
     /**
      * section要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function section()
+    public function section(...$options)
     {
-        $this->arrayElementsInsert('section');
+        $this->arrayElementsInsert('section', ...$options);
         return $this;
     }
 
     /**
      * nav要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function nav()
+    public function nav(...$options)
     {
-        $this->arrayElementsInsert('nav');
+        $this->arrayElementsInsert('nav', ...$options);
         return $this;
     }
 
     /**
      * article要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function article()
+    public function article(...$options)
     {
-        $this->arrayElementsInsert('article');
+        $this->arrayElementsInsert('article', ...$options);
         return $this;
     }
 
     /**
      * aside要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function aside()
+    public function aside(...$options)
     {
-        $this->arrayElementsInsert('aside');
+        $this->arrayElementsInsert('aside', ...$options);
         return $this;
     }
 
     /**
      * h1要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function h1()
+    public function h1(...$options)
     {
-        $this->arrayElementsInsert('h1');
+        $this->arrayElementsInsert('h1', ...$options);
         return $this;
     }
 
     /**
      * h2要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function h2()
+    public function h2(...$options)
     {
-        $this->arrayElementsInsert('h2');
+        $this->arrayElementsInsert('h2', ...$options);
         return $this;
     }
 
     /**
      * h3要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function h3()
+    public function h3(...$options)
     {
-        $this->arrayElementsInsert('h3');
+        $this->arrayElementsInsert('h3', ...$options);
         return $this;
     }
 
     /**
      * h4要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function h4()
+    public function h4(...$options)
     {
-        $this->arrayElementsInsert('h4');
+        $this->arrayElementsInsert('h4', ...$options);
         return $this;
     }
 
     /**
      * h5要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function h5()
+    public function h5(...$options)
     {
-        $this->arrayElementsInsert('h5');
+        $this->arrayElementsInsert('h5', ...$options);
         return $this;
     }
 
     /**
      * h6要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function h6()
+    public function h6(...$options)
     {
-        $this->arrayElementsInsert('h6');
+        $this->arrayElementsInsert('h6', ...$options);
         return $this;
     }
 
     /**
      * header要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function header()
+    public function header(...$options)
     {
-        $this->arrayElementsInsert('header');
+        $this->arrayElementsInsert('header', ...$options);
         return $this;
     }
 
     /**
      * footer要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function footer()
+    public function footer(...$options)
     {
-        $this->arrayElementsInsert('footer');
+        $this->arrayElementsInsert('footer', ...$options);
         return $this;
     }
 }

@@ -6,111 +6,122 @@ trait Content
 {
     /**
      * p要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function p()
+    public function p(...$options)
     {
-        $this->arrayElementsInsert('p');
+        $this->arrayElementsInsert('p', ...$options);
         return $this;
     }
 
     /**
      * hr要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function hr()
+    public function hr(...$options)
     {
-        $this->arrayElementInsert('hr');
+        $this->arrayElementInsert('hr', ...$options);
         return $this;
     }
 
     /**
      * pre要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function pre()
+    public function pre(...$options)
     {
-        $this->arrayElementsInsert('pre');
+        $this->arrayElementsInsert('pre', ...$options);
         return $this;
     }
 
     /**
      * ol要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function ol()
+    public function ol(...$options)
     {
-        $this->arrayElementsInsert('ol');
+        $this->arrayElementsInsert('ol', ...$options);
         return $this;
     }
 
     /**
      * ul要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function ul()
+    public function ul(...$options)
     {
-        $this->arrayElementsInsert('ul');
+        $this->arrayElementsInsert('ul', ...$options);
         return $this;
     }
 
     /**
      * li要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function li()
+    public function li(...$options)
     {
-        $this->arrayElementsInsert('li');
+        $this->arrayElementsInsert('li', ...$options);
         return $this;
     }
 
     /**
      * dl要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function dl()
+    public function dl(...$options)
     {
-        $this->arrayElementsInsert('dl');
+        $this->arrayElementsInsert('dl', ...$options);
         return $this;
     }
 
     /**
      * dt要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function dt()
+    public function dt(...$options)
     {
-        $this->arrayElementsInsert('dt');
+        $this->arrayElementsInsert('dt', ...$options);
         return $this;
     }
 
     /**
      * dd要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function dd()
+    public function dd(...$options)
     {
-        $this->arrayElementsInsert('dd');
+        $this->arrayElementsInsert('dd', ...$options);
         return $this;
     }
 
     /**
      * div要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function div()
+    public function div(...$options)
     {
-        $this->arrayElementsInsert('div');
+        $this->arrayElementsInsert('div', ...$options);
         return $this;
     }
 
     /**
      * main要素を渡します
+     * @param array ...$options
      * @return $this
      */
-    public function main()
+    public function main(...$options)
     {
-        $this->arrayElementsInsert('main');
+        $this->arrayElementsInsert('main', ...$options);
         return $this;
     }
 }
