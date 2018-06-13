@@ -75,7 +75,7 @@ class HtmlBuilder
      * で出力します
      * @param $mode
      */
-    public function append($mode)
+    public function append($mode = 'min')
     {
         if ($mode === 'dev') {
             var_dump($this->buffer);
