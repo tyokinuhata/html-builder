@@ -14,4 +14,4 @@ $hb
         ->h1()
             ->text('見出し')->upstream()
         ->p()
-            ->text('本文')->append();
+            ->text('本文')->append('dev');

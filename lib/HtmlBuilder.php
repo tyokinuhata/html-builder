@@ -69,12 +69,21 @@ class HtmlBuilder
     }
 
     /**
-     * 出力します
+     * dev: 開発者モード
+     * prod: プロダクトモード
+     * min: プロダクトモード(ミニファイ)
+     * で出力します
+     * @param $mode
      */
-    public function append()
+    public function append($mode)
     {
-//        var_dump($this->buffer);
-        echo implode('', $this->buffer);
+        if ($mode === 'dev') {
+            var_dump($this->buffer);
+        } else if ($mode === 'prod') {
+            // TODO: 実装
+        } else if ($mode === 'min') {
+            echo implode('', $this->buffer);
+        }
     }
 
     use Foundation;
