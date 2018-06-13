@@ -100,12 +100,13 @@ class HtmlBuilder
     }
 
     /**
-     * ポインタを１階層上へ戻します
+     * ポインタをn階層上へ戻します
+     * @param int $depth
      * @return $this
      */
-    public function out()
+    public function out($depth = 1)
     {
-        $this->pointer++;
+        $this->pointer += $depth;
         return $this;
     }
 
