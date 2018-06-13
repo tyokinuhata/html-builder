@@ -1,6 +1,7 @@
 {
   "name": "tyokinuhata/html-builder",
   "description": "A library that can write HTML in PHP",
+  "keywords": [ "php", "html" ],
   "type": "library",
   "license": "MIT",
   "authors": [
