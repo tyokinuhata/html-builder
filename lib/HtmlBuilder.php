@@ -93,4 +93,5 @@ class HtmlBuilder
     use Text;
     use Embedded;
     use Table;
+    use Form;
 }
