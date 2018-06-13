@@ -51,6 +51,11 @@ trait Foundation
         return $this;
     }
 
+    /**
+     * meta要素を渡します
+     * @param array ...$options
+     * @return $this
+     */
     public function meta(...$options)
     {
         $this->arrayElementsInsert('meta', ...$options);
