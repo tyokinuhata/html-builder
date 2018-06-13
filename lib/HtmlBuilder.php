@@ -16,14 +16,16 @@ class HtmlBuilder
     /**
      * バッファに閉じタグのある要素を挿入します
      * @param $element
-     * @param $attribute
-     * @param $value
+     * @param array ...$options
      * @return $this
      */
-    private function arrayElementsInsert($element, $attribute = null, $value = null)
+    private function arrayElementsInsert($element, ...$options)
     {
-        $beginElement = $element . (!is_null($attribute) ? ' ' . $attribute : '') . (!is_null($value) ? '="' . $value . '"' : '');
-        array_splice($this->buffer, $this->pointer++, 0, '<' . $beginElement . '>');
+        $option = '';
+        for ($i = 0; $i < count($options); $i += 2) {
+            $option .= ' ' . $options[$i] . '="' . $options[$i + 1] . '"';
+        }
+        array_splice($this->buffer, $this->pointer++, 0, '<' . $element . $option . '>');
         array_splice($this->buffer, $this->pointer, 0, '</' . $element . '>');
         return $this;
     }
@@ -31,14 +33,16 @@ class HtmlBuilder
     /**
      * バッファに閉じタグのない要素を挿入します
      * @param $element
-     * @param null $attribute
-     * @param null $value
+     * @param array ...$options
      * @return $this
      */
-    private function arrayElementInsert($element, $attribute = null, $value = null)
+    private function arrayElementInsert($element, ...$options)
     {
-        $element .= (!is_null($attribute) ? ' ' . $attribute : '') . (!is_null($value) ? '="' . $value . '"' : '');
-        array_splice($this->buffer, $this->pointer++, 0, '<' . $element . '>');
+        $option = '';
+        for ($i = 0; $i < count($options); $i += 2) {
+            $option .= ' ' . $options[$i] . '="' . $options[$i + 1] . '"';
+        }
+        array_splice($this->buffer, $this->pointer++, 0, '<' . $element . $option . '>');
         return $this;
     }
 
