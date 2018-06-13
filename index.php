@@ -9,9 +9,9 @@ $hb
     ->head()
         ->meta('charset', 'utf-8')
         ->title()
-            ->text('タイトル')->out(2)
+            ->text('タイトル')->upstream(2)
     ->body()
         ->h1()
-            ->text('見出し')->out()
+            ->text('見出し')->upstream()
         ->p()
             ->text('本文')->append();

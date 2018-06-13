@@ -62,7 +62,7 @@ class HtmlBuilder
      * @param int $depth
      * @return $this
      */
-    public function out($depth = 1)
+    public function upstream($depth = 1)
     {
         $this->pointer += $depth;
         return $this;
