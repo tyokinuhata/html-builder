@@ -15,6 +15,46 @@ trait Section
     }
 
     /**
+     * section要素を渡します
+     * @return $this
+     */
+    public function section()
+    {
+        $this->arrayElementsInsert('section');
+        return $this;
+    }
+
+    /**
+     * nav要素を渡します
+     * @return $this
+     */
+    public function nav()
+    {
+        $this->arrayElementsInsert('nav');
+        return $this;
+    }
+
+    /**
+     * article要素を渡します
+     * @return $this
+     */
+    public function article()
+    {
+        $this->arrayElementsInsert('article');
+        return $this;
+    }
+
+    /**
+     * aside要素を渡します
+     * @return $this
+     */
+    public function aside()
+    {
+        $this->arrayElementsInsert('aside');
+        return $this;
+    }
+
+    /**
      * h1要素を渡します
      * @return $this
      */
@@ -71,6 +111,26 @@ trait Section
     public function h6()
     {
         $this->arrayElementsInsert('h6');
+        return $this;
+    }
+
+    /**
+     * header要素を渡します
+     * @return $this
+     */
+    public function header()
+    {
+        $this->arrayElementsInsert('header');
+        return $this;
+    }
+
+    /**
+     * footer要素を渡します
+     * @return $this
+     */
+    public function footer()
+    {
+        $this->arrayElementsInsert('footer');
         return $this;
     }
 }
