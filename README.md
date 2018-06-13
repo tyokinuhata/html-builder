@@ -74,7 +74,7 @@ $ make up
 |Table|テーブル関連のトレイト|
 |Form|フォーム関連のトレイト|
 
-#### リンク
+### リンク
 
 [GitHub](https://github.com/tyokinuhata/html-builder)  
 [Packagist](https://packagist.org/packages/tyokinuhata/html-builder)
