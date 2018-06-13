@@ -38,8 +38,7 @@ class HtmlBuilder
     private function arrayElementInsert($element, $attribute = null, $value = null)
     {
         $element .= (!is_null($attribute) ? ' ' . $attribute : '') . (!is_null($value) ? '="' . $value . '"' : '');
-        array_splice($this->buffer, $this->pointer, 0, '<' . $element . '>');
-        $this->pointer += 2;
+        array_splice($this->buffer, $this->pointer++, 0, '<' . $element . '>');
         return $this;
     }
 
@@ -50,8 +49,7 @@ class HtmlBuilder
      */
     private function arrayTextNodeInsert($text)
     {
-        array_splice($this->buffer, $this->pointer, 0, $text);
-        $this->pointer += 2;
+        array_splice($this->buffer, $this->pointer++, 0, $text);
         return $this;
     }
 
@@ -72,6 +70,7 @@ class HtmlBuilder
     public function append()
     {
         var_dump($this->buffer);
+        echo $this->pointer;
 //        echo implode('', $this->element);
     }
 

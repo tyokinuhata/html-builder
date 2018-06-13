@@ -48,7 +48,7 @@ trait Foundation
 
     public function br()
     {
-        $this->arrayElementsInsert('br');
+        $this->arrayElementInsert('br');
         return $this;
     }
 
