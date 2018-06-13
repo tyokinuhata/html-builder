@@ -9,7 +9,7 @@ namespace HtmlBuilder;
 trait Text
 {
     /**
-     * a要素をバッファに渡します
+     * a要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -20,7 +20,7 @@ trait Text
     }
 
     /**
-     * strong要素をバッファに渡します
+     * strong要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -31,7 +31,7 @@ trait Text
     }
 
     /**
-     * sub要素をバッファに渡します
+     * sub要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -42,7 +42,7 @@ trait Text
     }
 
     /**
-     * sup要素をバッファに渡します
+     * sup要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -53,7 +53,7 @@ trait Text
     }
 
     /**
-     * i要素をバッファに渡します
+     * i要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -64,7 +64,7 @@ trait Text
     }
 
     /**
-     * b要素をバッファに渡します
+     * b要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -75,7 +75,7 @@ trait Text
     }
 
     /**
-     * span要素をバッファに渡します
+     * span要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -86,7 +86,7 @@ trait Text
     }
 
     /**
-     * br要素をバッファに渡します
+     * br要素をバッファに渡すメソッド
      * @return $this
      */
     public function br()
@@ -96,7 +96,7 @@ trait Text
     }
 
     /**
-     * wbr要素をバッファに渡します
+     * wbr要素をバッファに渡すメソッド
      * @return $this
      */
     public function wbr()
@@ -106,7 +106,7 @@ trait Text
     }
 
     /**
-     * テキストを受け取り, バッファに渡します
+     * テキストを受け取り, バッファに渡すメソッド
      * @param $text
      * @return $this
      */

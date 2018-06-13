@@ -9,7 +9,7 @@ namespace HtmlBuilder;
 trait Embedded
 {
     /**
-     * img要素をバッファに渡します
+     * img要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */

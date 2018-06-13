@@ -9,7 +9,7 @@ namespace HtmlBuilder;
 trait Content
 {
     /**
-     * p要素をバッファに渡します
+     * p要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -20,7 +20,7 @@ trait Content
     }
 
     /**
-     * hr要素をバッファに渡します
+     * hr要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -31,7 +31,7 @@ trait Content
     }
 
     /**
-     * pre要素をバッファに渡します
+     * pre要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -42,7 +42,7 @@ trait Content
     }
 
     /**
-     * ol要素をバッファに渡します
+     * ol要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -53,7 +53,7 @@ trait Content
     }
 
     /**
-     * ul要素をバッファに渡します
+     * ul要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -64,7 +64,7 @@ trait Content
     }
 
     /**
-     * li要素をバッファに渡します
+     * li要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -75,7 +75,7 @@ trait Content
     }
 
     /**
-     * dl要素をバッファに渡します
+     * dl要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -86,7 +86,7 @@ trait Content
     }
 
     /**
-     * dt要素をバッファに渡します
+     * dt要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -97,7 +97,7 @@ trait Content
     }
 
     /**
-     * dd要素をバッファに渡します
+     * dd要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -108,7 +108,7 @@ trait Content
     }
 
     /**
-     * div要素をバッファに渡します
+     * div要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -119,7 +119,7 @@ trait Content
     }
 
     /**
-     * main要素をバッファに渡します
+     * main要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */

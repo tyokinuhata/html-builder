@@ -9,7 +9,7 @@ namespace HtmlBuilder;
 trait Table
 {
     /**
-     * table要素をバッファに渡します
+     * table要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -20,7 +20,7 @@ trait Table
     }
 
     /**
-     * caption要素をバッファに渡します
+     * caption要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -31,7 +31,7 @@ trait Table
     }
 
     /**
-     * col要素をバッファに渡します
+     * col要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -42,7 +42,7 @@ trait Table
     }
 
     /**
-     * tbody要素をバッファに渡します
+     * tbody要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -53,7 +53,7 @@ trait Table
     }
 
     /**
-     * thead要素をバッファに渡します
+     * thead要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -64,7 +64,7 @@ trait Table
     }
 
     /**
-     * tfoot要素をバッファに渡します
+     * tfoot要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -75,7 +75,7 @@ trait Table
     }
 
     /**
-     * tr要素をバッファに渡します
+     * tr要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -86,7 +86,7 @@ trait Table
     }
 
     /**
-     * td要素をバッファに渡します
+     * td要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
@@ -97,7 +97,7 @@ trait Table
     }
 
     /**
-     * th要素をバッファに渡します
+     * th要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */

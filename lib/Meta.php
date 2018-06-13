@@ -9,7 +9,7 @@ namespace HtmlBuilder;
 trait Meta
 {
     /**
-     * head要素をバッファに渡します
+     * head要素をバッファに渡すメソッド
      * @return $this
      */
     public function head()
@@ -19,7 +19,7 @@ trait Meta
     }
 
     /**
-     * title要素をバッファに渡します
+     * title要素をバッファに渡すメソッド
      * @return $this
      */
     public function title()
@@ -29,7 +29,7 @@ trait Meta
     }
 
     /**
-     * meta要素をバッファに渡します
+     * meta要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */

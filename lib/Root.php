@@ -9,7 +9,7 @@ namespace HtmlBuilder;
 trait Root
 {
     /**
-     * html要素をバッファに渡します
+     * html要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this
      */
