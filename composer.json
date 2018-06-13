@@ -1,4 +1,17 @@
 {
+  "name": "tyokinuhata/html-builder",
+  "description": "A library that can write HTML in PHP",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kazukichi",
+      "email": "kazukiti201@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "require-dev": {},
   "autoload": {
     "psr-4": {
       "HtmlBuilder\\": "lib/"
