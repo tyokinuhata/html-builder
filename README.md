@@ -1,15 +1,62 @@
 # HTML Builder
 PHPでHTMLの組み立てができるライブラリ
 
-#### autoloadの作成
+### 利用者向け
 
+#### インストール
+
+```bash
+$ composer require tyokinuhata/html-builder
 ```
+
+#### サンプルコード
+
+```php
+<?php
+
+require_once 'vendor/autoload.php';
+
+$hb = new HtmlBuilder\HtmlBuilder();
+
+$hb
+->html('lang', 'ja')
+    ->head()
+        ->meta('charset', 'utf-8')
+        ->title()
+            ->text('タイトル')->upstream(2)
+    ->body()
+        ->h1()
+            ->text('見出し')->upstream()
+        ->p()
+            ->text('本文')->upstream()
+        ->input('type', 'text')
+        ->button('type', 'submit')
+            ->text('送信')->append();
+```
+
+#### ビルドインサーバの起動
+
+```bash
+$ php -S localhost:8000 index.php
+```
+
+### 開発者向け
+
+#### クローン
+
+```bash
+$ git clone https://github.com/tyokinuhata/html-builder.git
+```
+
+#### セットアップ
+
+```bash
 $ make setup
 ```
 
-#### ローカルサーバの起動
+#### ビルドインサーバの起動
 
-```
+```bash
 $ make up
 ```
 
@@ -26,3 +73,8 @@ $ make up
 |Embedded|コンテンツの埋め込み関連のトレイト|
 |Table|テーブル関連のトレイト|
 |Form|フォーム関連のトレイト|
+
+#### リンク
+
+[GitHub](https://github.com/tyokinuhata/html-builder)  
+[Packagist](https://packagist.org/packages/tyokinuhata/html-builder)
