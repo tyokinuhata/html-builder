@@ -51,6 +51,12 @@ trait Foundation
         return $this;
     }
 
+    public function meta(...$options)
+    {
+        $this->arrayElementsInsert('meta', ...$options);
+        return $this;
+    }
+
     /**
      * テキストを受け取り, 渡します
      * @param $text
