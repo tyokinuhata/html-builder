@@ -9,9 +9,11 @@
       "email": "kazukiti201@gmail.com"
     }
   ],
-  "minimum-stability": "stable",
-  "prefer-stable": true,
-  "require": {},
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1.4",
+    "tyokinuhata/html-builder": "*"
+  },
   "require-dev": {},
   "autoload": {
     "psr-4": {
