@@ -14,17 +14,32 @@ class HtmlBuilder
     }
 
     /**
-     * 配列に対して要素を挿入します
+     * 配列に対して閉じタグのある要素を挿入します
      * @param $element
      * @param $attribute
      * @param $value
      * @return $this
      */
-    private function arrayElementInsert($element, $attribute = null, $value = null)
+    private function arrayElementsInsert($element, $attribute = null, $value = null)
     {
         $beginElement = $element . (!is_null($attribute) ? ' ' . $attribute : '') . (!is_null($value) ? '="' . $value . '"' : '');
         array_splice($this->element, $this->pointer++, 0, '<' . $beginElement . '>');
         array_splice($this->element, $this->pointer, 0, '</' . $element . '>');
+        return $this;
+    }
+
+    /**
+     * 配列に対して閉じタグのない要素を挿入します
+     * @param $element
+     * @param null $attribute
+     * @param null $value
+     * @return $this
+     */
+    private function arrayElementInsert($element, $attribute = null, $value = null)
+    {
+        $element .= (!is_null($attribute) ? ' ' . $attribute : '') . (!is_null($value) ? '="' . $value . '"' : '');
+        array_splice($this->element, $this->pointer, 0, '<' . $element . '>');
+        $this->pointer += 2;
         return $this;
     }
 

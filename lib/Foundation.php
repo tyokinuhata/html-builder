@@ -12,7 +12,7 @@ trait Foundation
      */
     public function html($attribute = 'lang', $value = 'en')
     {
-        $this->arrayElementInsert('html', $attribute, $value);
+        $this->arrayElementsInsert('html', $attribute, $value);
         return $this;
     }
 
@@ -22,7 +22,7 @@ trait Foundation
      */
     public function head()
     {
-        $this->arrayElementInsert('head');
+        $this->arrayElementsInsert('head');
         return $this;
     }
 
@@ -32,7 +32,7 @@ trait Foundation
      */
     public function body()
     {
-        $this->arrayElementInsert('body');
+        $this->arrayElementsInsert('body');
         return $this;
     }
 
@@ -42,7 +42,13 @@ trait Foundation
      */
     public function title()
     {
-        $this->arrayElementInsert('title');
+        $this->arrayElementsInsert('title');
+        return $this;
+    }
+
+    public function br()
+    {
+        $this->arrayElementsInsert('br');
         return $this;
     }
 

@@ -9,6 +9,7 @@ $hb
     ->head()
         ->title()->text('タイトルです！')->out()
     ->body()
+        ->br()->br()->br()
         ->h1()->text('h1です！')
         ->h2()->text('h2です！')
         ->h3()->text('h3です！')

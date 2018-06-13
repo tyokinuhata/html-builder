@@ -10,7 +10,7 @@ trait H
      */
     public function h1()
     {
-        $this->arrayElementInsert('h1');
+        $this->arrayElementsInsert('h1');
         return $this;
     }
 
@@ -20,7 +20,7 @@ trait H
      */
     public function h2()
     {
-        $this->arrayElementInsert('h2');
+        $this->arrayElementsInsert('h2');
         return $this;
     }
 
@@ -30,7 +30,7 @@ trait H
      */
     public function h3()
     {
-        $this->arrayElementInsert('h3');
+        $this->arrayElementsInsert('h3');
         return $this;
     }
 
@@ -40,7 +40,7 @@ trait H
      */
     public function h4()
     {
-        $this->arrayElementInsert('h4');
+        $this->arrayElementsInsert('h4');
         return $this;
     }
 
@@ -50,7 +50,7 @@ trait H
      */
     public function h5()
     {
-        $this->arrayElementInsert('h5');
+        $this->arrayElementsInsert('h5');
         return $this;
     }
 
@@ -60,7 +60,7 @@ trait H
      */
     public function h6()
     {
-        $this->arrayElementInsert('h6');
+        $this->arrayElementsInsert('h6');
         return $this;
     }
 }
