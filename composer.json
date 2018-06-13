@@ -9,7 +9,7 @@
       "email": "kazukiti201@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {},
   "require-dev": {},
