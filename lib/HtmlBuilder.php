@@ -39,67 +39,6 @@ class HtmlBuilder
     }
 
     /**
-     * テキストを受け取り, 渡します
-     * @param $text
-     * @return $this
-     */
-    public function text($text)
-    {
-        $this->arrayTextNodeInsert($text);
-        return $this;
-    }
-
-    /**
-     * html要素を渡します
-     * @return $this
-     */
-    public function html()
-    {
-        $this->arrayElementInsert('html');
-        return $this;
-    }
-
-    /**
-     * head要素を渡します
-     * @return $this
-     */
-    public function head()
-    {
-        $this->arrayElementInsert('head');
-        return $this;
-    }
-
-    /**
-     * body要素を渡します
-     * @return $this
-     */
-    public function body()
-    {
-        $this->arrayElementInsert('body');
-        return $this;
-    }
-
-    /**
-     * title要素を渡します
-     * @return $this
-     */
-    public function title()
-    {
-        $this->arrayElementInsert('title');
-        return $this;
-    }
-
-    /**
-     * h1要素を渡します
-     * @return $this
-     */
-    public function h1()
-    {
-        $this->arrayElementInsert('h1');
-        return $this;
-    }
-
-    /**
      * ポインタをn階層上へ戻します
      * @param int $depth
      * @return $this
@@ -118,4 +57,7 @@ class HtmlBuilder
         var_dump($this->element);
 //        echo implode('', $this->element);
     }
+
+    use Foundation;
+    use H;
 }
