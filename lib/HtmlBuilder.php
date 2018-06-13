@@ -4,17 +4,17 @@ namespace HtmlBuilder;
 
 class HtmlBuilder
 {
-    private $element;
+    private $buffer;
     private $pointer;
 
     public function __construct()
     {
-        $this->element = [ '<!DOCTYPE html>' ];
+        $this->buffer = [ '<!DOCTYPE html>' ];
         $this->pointer = 1;
     }
 
     /**
-     * 配列に対して閉じタグのある要素を挿入します
+     * バッファに閉じタグのある要素を挿入します
      * @param $element
      * @param $attribute
      * @param $value
@@ -23,13 +23,13 @@ class HtmlBuilder
     private function arrayElementsInsert($element, $attribute = null, $value = null)
     {
         $beginElement = $element . (!is_null($attribute) ? ' ' . $attribute : '') . (!is_null($value) ? '="' . $value . '"' : '');
-        array_splice($this->element, $this->pointer++, 0, '<' . $beginElement . '>');
-        array_splice($this->element, $this->pointer, 0, '</' . $element . '>');
+        array_splice($this->buffer, $this->pointer++, 0, '<' . $beginElement . '>');
+        array_splice($this->buffer, $this->pointer, 0, '</' . $element . '>');
         return $this;
     }
 
     /**
-     * 配列に対して閉じタグのない要素を挿入します
+     * バッファに閉じタグのない要素を挿入します
      * @param $element
      * @param null $attribute
      * @param null $value
@@ -38,19 +38,19 @@ class HtmlBuilder
     private function arrayElementInsert($element, $attribute = null, $value = null)
     {
         $element .= (!is_null($attribute) ? ' ' . $attribute : '') . (!is_null($value) ? '="' . $value . '"' : '');
-        array_splice($this->element, $this->pointer, 0, '<' . $element . '>');
+        array_splice($this->buffer, $this->pointer, 0, '<' . $element . '>');
         $this->pointer += 2;
         return $this;
     }
 
     /**
-     * 配列に対してテキストを挿入します
+     * バッファにテキストを挿入します
      * @param $text
      * @return $this
      */
     private function arrayTextNodeInsert($text)
     {
-        array_splice($this->element, $this->pointer, 0, $text);
+        array_splice($this->buffer, $this->pointer, 0, $text);
         $this->pointer += 2;
         return $this;
     }
@@ -71,7 +71,7 @@ class HtmlBuilder
      */
     public function append()
     {
-        var_dump($this->element);
+        var_dump($this->buffer);
 //        echo implode('', $this->element);
     }
 
