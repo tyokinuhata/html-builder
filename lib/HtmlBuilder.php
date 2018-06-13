@@ -92,4 +92,5 @@ class HtmlBuilder
     use Content;
     use Text;
     use Embedded;
+    use Table;
 }
