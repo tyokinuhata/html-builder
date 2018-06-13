@@ -14,4 +14,7 @@ $hb
         ->h1()
             ->text('見出し')->upstream()
         ->p()
-            ->text('本文')->append('dev');
+            ->text('本文')->upstream()
+        ->input('type', 'text')
+        ->button('type', 'submit')
+            ->text('送信')->append();
