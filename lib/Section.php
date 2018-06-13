@@ -2,7 +2,7 @@
 
 namespace HtmlBuilder;
 
-trait H
+trait Section
 {
     /**
      * h1要素を渡します

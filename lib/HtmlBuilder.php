@@ -73,10 +73,11 @@ class HtmlBuilder
      */
     public function append()
     {
-        var_dump($this->buffer);
-//        echo implode('', $this->buffer);
+//        var_dump($this->buffer);
+        echo implode('', $this->buffer);
     }
 
     use Foundation;
-    use H;
+    use Section;
+    use Content;
 }

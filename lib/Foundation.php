@@ -58,7 +58,7 @@ trait Foundation
      */
     public function meta(...$options)
     {
-        $this->arrayElementsInsert('meta', ...$options);
+        $this->arrayElementInsert('meta', ...$options);
         return $this;
     }
 
