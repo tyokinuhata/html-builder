@@ -9,8 +9,8 @@ class HtmlBuilder
 
     public function __construct()
     {
-        $this->element = [];
-        $this->pointer = 0;
+        $this->element = [ '<!DOCTYPE html>' ];
+        $this->pointer = 1;
     }
 
     /**
