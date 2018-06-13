@@ -6,11 +6,13 @@ trait Foundation
 {
     /**
      * html要素を渡します
+     * @param string $attribute
+     * @param string $value
      * @return $this
      */
-    public function html()
+    public function html($attribute = 'lang', $value = 'en')
     {
-        $this->arrayElementInsert('html');
+        $this->arrayElementInsert('html', $attribute, $value);
         return $this;
     }
 

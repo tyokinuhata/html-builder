@@ -15,14 +15,16 @@ class HtmlBuilder
 
     /**
      * 配列に対して要素を挿入します
-     * @param $beginElement
-     * @param null $endElement
+     * @param $element
+     * @param $attribute
+     * @param $value
      * @return $this
      */
-    private function arrayElementInsert($beginElement, $endElement = null)
+    private function arrayElementInsert($element, $attribute = null, $value = null)
     {
+        $beginElement = $element . (!is_null($attribute) ? ' ' . $attribute : '') . (!is_null($value) ? '="' . $value . '"' : '');
         array_splice($this->element, $this->pointer++, 0, '<' . $beginElement . '>');
-        array_splice($this->element, $this->pointer, 0, '</' . (is_null($endElement) ? $beginElement : $endElement) . '>');
+        array_splice($this->element, $this->pointer, 0, '</' . $element . '>');
         return $this;
     }
 
