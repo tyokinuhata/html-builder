@@ -70,8 +70,7 @@ class HtmlBuilder
     public function append()
     {
         var_dump($this->buffer);
-        echo $this->pointer;
-//        echo implode('', $this->element);
+//        echo implode('', $this->buffer);
     }
 
     use Foundation;

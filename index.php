@@ -9,5 +9,6 @@ $hb
     ->head()
         ->title()->text('タイトルです！')->out()
     ->body()
-        ->text('aaa')->br()->br()->br()
-        ->h1()->h1()->append();
+        ->h1()
+            ->text('aaa')->br()->text('bbb')->out()
+        ->h1()->text('ccc')->append();
