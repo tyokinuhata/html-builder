@@ -52,6 +52,59 @@ $hb
 $ php -S localhost:8000 index.php
 ```
 
+#### 使用可能な要素一覧
+
+- html
+- head
+- title
+- meta
+- body
+- section
+- nav
+- article
+- aside
+- h1 ~ h6
+- header
+- footer
+- p
+- hr
+- pre
+- ol
+- ul
+- li
+- dl
+- dt
+- dd
+- div
+- main
+- a
+- strong
+- sub
+- sup
+- i
+- b
+- span
+- br
+- wbr
+- img
+- iframe
+- table
+- caption
+- col
+- tbody
+- thead
+- tfoot
+- tr
+- td
+- th
+- form
+- label
+- input
+- button
+- select
+- option
+- textarea
+
 ### このライブラリを開発する場合
 
 #### クローン
