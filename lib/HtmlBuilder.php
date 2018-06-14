@@ -22,8 +22,12 @@ class HtmlBuilder
     private function arrayElementsInsert($element, ...$options)
     {
         $option = '';
-        for ($i = 0; $i < count($options); $i += 2) {
-            $option .= ' ' . $options[$i] . '="' . $options[$i + 1] . '"';
+        for ($i = 0; $i < count($options); $i++) {
+            if (substr($options[$i], 0, 1) === '@') {
+                $option .= ' ' . $options[$i];
+            } else {
+                $option .= ' ' . $options[$i] . '="' . $options[++$i] . '"';
+            }
         }
         array_splice($this->buffer, $this->pointer++, 0, '<' . $element . $option . '>');
         array_splice($this->buffer, $this->pointer, 0, '</' . $element . '>');

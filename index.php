@@ -5,7 +5,7 @@ require_once 'vendor/autoload.php';
 $hb = new HtmlBuilder\HtmlBuilder();
 
 $hb
-->html('lang', 'ja')
+->html('lang', 'ja', '@hoge')
     ->head()
         ->meta('charset', 'utf-8')
         ->title()
