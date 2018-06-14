@@ -29,6 +29,17 @@ trait Meta
     }
 
     /**
+     * link要素をバッファに渡すメソッド
+     * @param array ...$options
+     * @return $this
+     */
+    public function link(...$options)
+    {
+        $this->insertElementToBuffer('link', ...$options);
+        return $this;
+    }
+
+    /**
      * meta要素をバッファに渡すメソッド
      * @param array ...$options
      * @return $this

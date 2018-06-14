@@ -96,6 +96,7 @@ class HtmlBuilder
 
     use Root;
     use Meta;
+    use Script;
     use Section;
     use Content;
     use Text;
