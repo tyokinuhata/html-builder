@@ -57,7 +57,9 @@ $ php -S localhost:8000 index.php
 - html
 - head
 - title
+- link
 - meta
+- script
 - body
 - section
 - nav
