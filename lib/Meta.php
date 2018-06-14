@@ -14,7 +14,7 @@ trait Meta
      */
     public function head()
     {
-        $this->arrayElementsInsert('head');
+        $this->insertElementsToBuffer('head');
         return $this;
     }
 
@@ -24,7 +24,7 @@ trait Meta
      */
     public function title()
     {
-        $this->arrayElementsInsert('title');
+        $this->insertElementsToBuffer('title');
         return $this;
     }
 
@@ -35,7 +35,7 @@ trait Meta
      */
     public function meta(...$options)
     {
-        $this->arrayElementInsert('meta', ...$options);
+        $this->insertElementToBuffer('meta', ...$options);
         return $this;
     }
 }

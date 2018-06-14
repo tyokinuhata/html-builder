@@ -15,7 +15,7 @@ trait Section
      */
     public function body(...$options)
     {
-        $this->arrayElementsInsert('body', ...$options);
+        $this->insertElementsToBuffer('body', ...$options);
         return $this;
     }
 
@@ -26,7 +26,7 @@ trait Section
      */
     public function section(...$options)
     {
-        $this->arrayElementsInsert('section', ...$options);
+        $this->insertElementsToBuffer('section', ...$options);
         return $this;
     }
 
@@ -37,7 +37,7 @@ trait Section
      */
     public function nav(...$options)
     {
-        $this->arrayElementsInsert('nav', ...$options);
+        $this->insertElementsToBuffer('nav', ...$options);
         return $this;
     }
 
@@ -48,7 +48,7 @@ trait Section
      */
     public function article(...$options)
     {
-        $this->arrayElementsInsert('article', ...$options);
+        $this->insertElementsToBuffer('article', ...$options);
         return $this;
     }
 
@@ -59,7 +59,7 @@ trait Section
      */
     public function aside(...$options)
     {
-        $this->arrayElementsInsert('aside', ...$options);
+        $this->insertElementsToBuffer('aside', ...$options);
         return $this;
     }
 
@@ -70,7 +70,7 @@ trait Section
      */
     public function h1(...$options)
     {
-        $this->arrayElementsInsert('h1', ...$options);
+        $this->insertElementsToBuffer('h1', ...$options);
         return $this;
     }
 
@@ -81,7 +81,7 @@ trait Section
      */
     public function h2(...$options)
     {
-        $this->arrayElementsInsert('h2', ...$options);
+        $this->insertElementsToBuffer('h2', ...$options);
         return $this;
     }
 
@@ -92,7 +92,7 @@ trait Section
      */
     public function h3(...$options)
     {
-        $this->arrayElementsInsert('h3', ...$options);
+        $this->insertElementsToBuffer('h3', ...$options);
         return $this;
     }
 
@@ -103,7 +103,7 @@ trait Section
      */
     public function h4(...$options)
     {
-        $this->arrayElementsInsert('h4', ...$options);
+        $this->insertElementsToBuffer('h4', ...$options);
         return $this;
     }
 
@@ -114,7 +114,7 @@ trait Section
      */
     public function h5(...$options)
     {
-        $this->arrayElementsInsert('h5', ...$options);
+        $this->insertElementsToBuffer('h5', ...$options);
         return $this;
     }
 
@@ -125,7 +125,7 @@ trait Section
      */
     public function h6(...$options)
     {
-        $this->arrayElementsInsert('h6', ...$options);
+        $this->insertElementsToBuffer('h6', ...$options);
         return $this;
     }
 
@@ -136,7 +136,7 @@ trait Section
      */
     public function header(...$options)
     {
-        $this->arrayElementsInsert('header', ...$options);
+        $this->insertElementsToBuffer('header', ...$options);
         return $this;
     }
 
@@ -147,7 +147,7 @@ trait Section
      */
     public function footer(...$options)
     {
-        $this->arrayElementsInsert('footer', ...$options);
+        $this->insertElementsToBuffer('footer', ...$options);
         return $this;
     }
 }

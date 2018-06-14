@@ -15,7 +15,7 @@ trait Text
      */
     public function a(...$options)
     {
-        $this->arrayElementsInsert('a', ...$options);
+        $this->insertElementsToBuffer('a', ...$options);
         return $this;
     }
 
@@ -26,7 +26,7 @@ trait Text
      */
     public function strong(...$options)
     {
-        $this->arrayElementsInsert('strong', ...$options);
+        $this->insertElementsToBuffer('strong', ...$options);
         return $this;
     }
 
@@ -37,7 +37,7 @@ trait Text
      */
     public function sub(...$options)
     {
-        $this->arrayElementsInsert('sub', ...$options);
+        $this->insertElementsToBuffer('sub', ...$options);
         return $this;
     }
 
@@ -48,7 +48,7 @@ trait Text
      */
     public function sup(...$options)
     {
-        $this->arrayElementsInsert('sup', ...$options);
+        $this->insertElementsToBuffer('sup', ...$options);
         return $this;
     }
 
@@ -59,7 +59,7 @@ trait Text
      */
     public function i(...$options)
     {
-        $this->arrayElementsInsert('i', ...$options);
+        $this->insertElementsToBuffer('i', ...$options);
         return $this;
     }
 
@@ -70,7 +70,7 @@ trait Text
      */
     public function b(...$options)
     {
-        $this->arrayElementsInsert('b', ...$options);
+        $this->insertElementsToBuffer('b', ...$options);
         return $this;
     }
 
@@ -81,7 +81,7 @@ trait Text
      */
     public function span(...$options)
     {
-        $this->arrayElementsInsert('span', ...$options);
+        $this->insertElementsToBuffer('span', ...$options);
         return $this;
     }
 
@@ -91,7 +91,7 @@ trait Text
      */
     public function br()
     {
-        $this->arrayElementInsert('br');
+        $this->insertElementToBuffer('br');
         return $this;
     }
 
@@ -101,7 +101,7 @@ trait Text
      */
     public function wbr()
     {
-        $this->arrayElementInsert('wbr');
+        $this->insertElementToBuffer('wbr');
         return $this;
     }
 
@@ -112,7 +112,7 @@ trait Text
      */
     public function text($text)
     {
-        $this->arrayTextNodeInsert($text);
+        $this->insertTextToBuffer($text);
         return $this;
     }
 }

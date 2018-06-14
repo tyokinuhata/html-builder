@@ -15,7 +15,7 @@ trait Root
      */
     public function html(...$options)
     {
-        $this->arrayElementsInsert('html', ...$options);
+        $this->insertElementsToBuffer('html', ...$options);
         return $this;
     }
 }

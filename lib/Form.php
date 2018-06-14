@@ -15,7 +15,7 @@ trait Form
      */
     public function form(...$options)
     {
-        $this->arrayElementsInsert('form', ...$options);
+        $this->insertElementsToBuffer('form', ...$options);
         return $this;
     }
 
@@ -26,7 +26,7 @@ trait Form
      */
     public function label(...$options)
     {
-        $this->arrayElementsInsert('label', ...$options);
+        $this->insertElementsToBuffer('label', ...$options);
         return $this;
     }
 
@@ -37,7 +37,7 @@ trait Form
      */
     public function input(...$options)
     {
-        $this->arrayElementInsert('input', ...$options);
+        $this->insertElementToBuffer('input', ...$options);
         return $this;
     }
 
@@ -48,7 +48,7 @@ trait Form
      */
     public function button(...$options)
     {
-        $this->arrayElementsInsert('button', ...$options);
+        $this->insertElementsToBuffer('button', ...$options);
         return $this;
     }
 
@@ -59,7 +59,7 @@ trait Form
      */
     public function select(...$options)
     {
-        $this->arrayElementsInsert('select', ...$options);
+        $this->insertElementsToBuffer('select', ...$options);
         return $this;
     }
 
@@ -70,7 +70,7 @@ trait Form
      */
     public function option(...$options)
     {
-        $this->arrayElementsInsert('option', ...$options);
+        $this->insertElementsToBuffer('option', ...$options);
         return $this;
     }
 
@@ -81,7 +81,7 @@ trait Form
      */
     public function textarea(...$options)
     {
-        $this->arrayElementsInsert('textarea', ...$options);
+        $this->insertElementsToBuffer('textarea', ...$options);
         return $this;
     }
 }

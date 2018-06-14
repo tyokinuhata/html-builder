@@ -15,7 +15,7 @@ trait Content
      */
     public function p(...$options)
     {
-        $this->arrayElementsInsert('p', ...$options);
+        $this->insertElementsToBuffer('p', ...$options);
         return $this;
     }
 
@@ -26,7 +26,7 @@ trait Content
      */
     public function hr(...$options)
     {
-        $this->arrayElementInsert('hr', ...$options);
+        $this->insertElementToBuffer('hr', ...$options);
         return $this;
     }
 
@@ -37,7 +37,7 @@ trait Content
      */
     public function pre(...$options)
     {
-        $this->arrayElementsInsert('pre', ...$options);
+        $this->insertElementsToBuffer('pre', ...$options);
         return $this;
     }
 
@@ -48,7 +48,7 @@ trait Content
      */
     public function ol(...$options)
     {
-        $this->arrayElementsInsert('ol', ...$options);
+        $this->insertElementsToBuffer('ol', ...$options);
         return $this;
     }
 
@@ -59,7 +59,7 @@ trait Content
      */
     public function ul(...$options)
     {
-        $this->arrayElementsInsert('ul', ...$options);
+        $this->insertElementsToBuffer('ul', ...$options);
         return $this;
     }
 
@@ -70,7 +70,7 @@ trait Content
      */
     public function li(...$options)
     {
-        $this->arrayElementsInsert('li', ...$options);
+        $this->insertElementsToBuffer('li', ...$options);
         return $this;
     }
 
@@ -81,7 +81,7 @@ trait Content
      */
     public function dl(...$options)
     {
-        $this->arrayElementsInsert('dl', ...$options);
+        $this->insertElementsToBuffer('dl', ...$options);
         return $this;
     }
 
@@ -92,7 +92,7 @@ trait Content
      */
     public function dt(...$options)
     {
-        $this->arrayElementsInsert('dt', ...$options);
+        $this->insertElementsToBuffer('dt', ...$options);
         return $this;
     }
 
@@ -103,7 +103,7 @@ trait Content
      */
     public function dd(...$options)
     {
-        $this->arrayElementsInsert('dd', ...$options);
+        $this->insertElementsToBuffer('dd', ...$options);
         return $this;
     }
 
@@ -114,7 +114,7 @@ trait Content
      */
     public function div(...$options)
     {
-        $this->arrayElementsInsert('div', ...$options);
+        $this->insertElementsToBuffer('div', ...$options);
         return $this;
     }
 
@@ -125,7 +125,7 @@ trait Content
      */
     public function main(...$options)
     {
-        $this->arrayElementsInsert('main', ...$options);
+        $this->insertElementsToBuffer('main', ...$options);
         return $this;
     }
 }

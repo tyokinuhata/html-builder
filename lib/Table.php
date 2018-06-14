@@ -15,7 +15,7 @@ trait Table
      */
     public function table(...$options)
     {
-        $this->arrayElementsInsert('table', ...$options);
+        $this->insertElementsToBuffer('table', ...$options);
         return $this;
     }
 
@@ -26,7 +26,7 @@ trait Table
      */
     public function caption(...$options)
     {
-        $this->arrayElementsInsert('caption', ...$options);
+        $this->insertElementsToBuffer('caption', ...$options);
         return $this;
     }
 
@@ -37,7 +37,7 @@ trait Table
      */
     public function col(...$options)
     {
-        $this->arrayElementsInsert('col', ...$options);
+        $this->insertElementsToBuffer('col', ...$options);
         return $this;
     }
 
@@ -48,7 +48,7 @@ trait Table
      */
     public function tbody(...$options)
     {
-        $this->arrayElementsInsert('tbody', ...$options);
+        $this->insertElementsToBuffer('tbody', ...$options);
         return $this;
     }
 
@@ -59,7 +59,7 @@ trait Table
      */
     public function thead(...$options)
     {
-        $this->arrayElementsInsert('thead', ...$options);
+        $this->insertElementsToBuffer('thead', ...$options);
         return $this;
     }
 
@@ -70,7 +70,7 @@ trait Table
      */
     public function tfoot(...$options)
     {
-        $this->arrayElementsInsert('tfoot', ...$options);
+        $this->insertElementsToBuffer('tfoot', ...$options);
         return $this;
     }
 
@@ -81,7 +81,7 @@ trait Table
      */
     public function tr(...$options)
     {
-        $this->arrayElementsInsert('tr', ...$options);
+        $this->insertElementsToBuffer('tr', ...$options);
         return $this;
     }
 
@@ -92,7 +92,7 @@ trait Table
      */
     public function td(...$options)
     {
-        $this->arrayElementsInsert('td', ...$options);
+        $this->insertElementsToBuffer('td', ...$options);
         return $this;
     }
 
@@ -103,7 +103,7 @@ trait Table
      */
     public function th(...$options)
     {
-        $this->arrayElementsInsert('th', ...$options);
+        $this->insertElementsToBuffer('th', ...$options);
         return $this;
     }
 }

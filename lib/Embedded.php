@@ -15,7 +15,7 @@ trait Embedded
      */
     public function img(...$options)
     {
-        $this->arrayElementsInsert('img', ...$options);
+        $this->insertElementsToBuffer('img', ...$options);
         return $this;
     }
 
@@ -26,7 +26,7 @@ trait Embedded
      */
     public function iframe(...$options)
     {
-        $this->arrayElementsInsert('iframe', ...$options);
+        $this->insertElementsToBuffer('iframe', ...$options);
         return $this;
     }
 }

@@ -19,7 +19,7 @@ class HtmlBuilder
      * @param array ...$options
      * @return $this
      */
-    private function arrayElementsInsert($element, ...$options)
+    private function insertElementsToBuffer($element, ...$options)
     {
         $option = '';
         for ($i = 0; $i < count($options); $i++) {
@@ -40,11 +40,15 @@ class HtmlBuilder
      * @param array ...$options
      * @return $this
      */
-    private function arrayElementInsert($element, ...$options)
+    private function insertElementToBuffer($element, ...$options)
     {
         $option = '';
-        for ($i = 0; $i < count($options); $i += 2) {
-            $option .= ' ' . $options[$i] . '="' . $options[$i + 1] . '"';
+        for ($i = 0; $i < count($options); $i++) {
+            if (substr($options[$i], 0, 1) === '@') {
+                $option .= ' ' . $options[$i];
+            } else {
+                $option .= ' ' . $options[$i] . '="' . $options[++$i] . '"';
+            }
         }
         array_splice($this->buffer, $this->pointer++, 0, '<' . $element . $option . '>');
         return $this;
@@ -55,7 +59,7 @@ class HtmlBuilder
      * @param $text
      * @return $this
      */
-    private function arrayTextNodeInsert($text)
+    private function insertTextToBuffer($text)
     {
         array_splice($this->buffer, $this->pointer++, 0, $text);
         return $this;
