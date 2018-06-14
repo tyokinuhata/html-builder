@@ -45,7 +45,7 @@ class HtmlBuilder
         $option = '';
         for ($i = 0; $i < count($options); $i++) {
             if (substr($options[$i], 0, 1) === '@') {
-                $option .= ' ' . $options[$i];
+                $option .= ' ' . substr($options[$i], 1);
             } else {
                 $option .= ' ' . $options[$i] . '="' . $options[++$i] . '"';
             }

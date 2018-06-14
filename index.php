@@ -5,7 +5,7 @@ require_once 'vendor/autoload.php';
 $hb = new HtmlBuilder\HtmlBuilder();
 
 $hb
-->html('lang', 'ja', '@hoge')
+->html('lang', 'ja')
     ->head()
         ->meta('charset', 'utf-8')
         ->title()
@@ -15,6 +15,6 @@ $hb
             ->text('見出し')->upstream()
         ->p()
             ->text('本文')->upstream()
-        ->input('type', 'text')
+        ->input('type', 'text', '@autofocus')
         ->button('type', 'submit')
             ->text('送信')->append();
