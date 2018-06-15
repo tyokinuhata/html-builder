@@ -1,6 +1,6 @@
 <?php
 
-namespace HtmlBuilder;
+namespace HtmlBuilder\Html;
 
 /**
  * 文書のメタデータ関連のトレイト

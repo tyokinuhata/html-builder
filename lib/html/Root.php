@@ -1,6 +1,6 @@
 <?php
 
-namespace HtmlBuilder;
+namespace HtmlBuilder\Html;
 
 /**
  * 根本となる要素のトレイト

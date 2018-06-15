@@ -94,13 +94,13 @@ class HtmlBuilder
         }
     }
 
-    use Root;
-    use Meta;
-    use Script;
-    use Section;
-    use Content;
-    use Text;
-    use Embedded;
-    use Table;
-    use Form;
+    use Html\Root;
+    use Html\Meta;
+    use Html\Script;
+    use Html\Section;
+    use Html\Content;
+    use Html\Text;
+    use Html\Embedded;
+    use Html\Table;
+    use Html\Form;
 }

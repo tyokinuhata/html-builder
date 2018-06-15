@@ -1,6 +1,6 @@
 <?php
 
-namespace HtmlBuilder;
+namespace HtmlBuilder\Html;
 
 /**
  * テキスト関連のトレイト
