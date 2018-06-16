@@ -55,6 +55,31 @@ class HtmlBuilder
     }
 
     /**
+     * バッファにスタイルを挿入します
+     * @param $element
+     * @param array ...$codes
+     * @return $this
+     */
+    private function insertStylesToBuffer($element, ...$codes)
+    {
+        $codes = $codes[0];
+        $fmtCode = '';
+        foreach ($codes as $selector => $code)
+        {
+            $fmtCode .= $selector . '{';
+            foreach ($code as $property => $value)
+            {
+                $fmtCode .= $property . ':' . $value . ';';
+            }
+            $fmtCode .= '}';
+        }
+        array_splice($this->buffer, $this->pointer++, 0, '<' . $element . '>');
+        array_splice($this->buffer, $this->pointer++, 0, $fmtCode);
+        array_splice($this->buffer, $this->pointer++, 0, '</' . $element . '>');
+        return $this;
+    }
+
+    /**
      * バッファにテキストを挿入します
      * @param $text
      * @return $this

@@ -49,4 +49,15 @@ trait Meta
         $this->insertElementToBuffer('meta', ...$options);
         return $this;
     }
+
+    /**
+     * styleをバッファに渡すメソッド
+     * @param array ...$codes
+     * @return $this
+     */
+    public function style(...$codes)
+    {
+        $this->insertStylesToBuffer('style', ...$codes);
+        return $this;
+    }
 }
