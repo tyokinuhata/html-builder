@@ -23,11 +23,21 @@ $hb
     ->head()
         ->meta('charset', 'utf-8')
         ->title()
-            ->text('タイトル')->upstream(2)
+            ->text('タイトル')->upstream()
+        ->style([
+            '#title' => [
+                'color' => 'white',
+                'background' => 'red'
+            ],
+            '#content' => [
+                'color' => 'green',
+                'background' => 'blue'
+            ]
+        ])->upstream()
     ->body()
-        ->h1()
+        ->h1('id', 'title')
             ->text('見出し')->upstream()
-        ->p()
+        ->p('id', 'content')
             ->text('本文')->upstream()
         ->input('type', 'text', '@autofocus')
         ->button('type', 'submit')
@@ -39,6 +49,8 @@ $hb
 例外として, 値を取らなくて良い属性を記述する場合は, `->要素名('@属性')`のように記述します.
 
 プレーンなテキストを記述する場合は, `->text('テキスト')`のように, 引数に対して描画したいテキストを渡します.
+
+CSSの記述は, `->div('style', 'プロパティ:値;')`, `->link('rel', '.cssファイルへの参照')`のようにできる他, `->style(['セレクタ' => ['プロパティ' => '値'])`のように記述することも可能です.
 
 `->upstream()`はその階層を抜ける場合に使用します.  
 複数階層抜ける場合は`->upstream(2)`のように, 抜ける階層数を引数に指定します.
@@ -59,6 +71,7 @@ $ php -S localhost:8000 index.php
 - title
 - link
 - meta
+- style
 - script
 - body
 - section
