@@ -27,4 +27,4 @@ $hb
             ->text('本文')->upstream()
         ->input('type', 'text', '@autofocus')
         ->button('type', 'submit')
-            ->text('送信')->append();
+            ->text('送信')->build('index');

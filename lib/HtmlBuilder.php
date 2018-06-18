@@ -119,6 +119,20 @@ class HtmlBuilder
         }
     }
 
+    /**
+     * 任意のパスに任意の名前のhtmlファイルを生成します
+     * @param $path
+     */
+    public function build($path)
+    {
+        $fileName = $path . '.html';
+        if (!file_exists($fileName))
+        {
+            touch($fileName);
+        }
+        file_put_contents($fileName, $this->buffer);
+    }
+
     use Html\Root;
     use Html\Meta;
     use Html\Script;
