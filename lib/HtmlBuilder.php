@@ -22,10 +22,14 @@ class HtmlBuilder
     private function insertElementsToBuffer($element, ...$options)
     {
         $option = '';
-        for ($i = 0; $i < count($options); $i++) {
-            if (substr($options[$i], 0, 1) === '@') {
+        for ($i = 0; $i < count($options); $i++)
+        {
+            if (substr($options[$i], 0, 1) === '@')
+            {
                 $option .= ' ' . $options[$i];
-            } else {
+            }
+            else
+            {
                 $option .= ' ' . $options[$i] . '="' . $options[++$i] . '"';
             }
         }
@@ -43,10 +47,14 @@ class HtmlBuilder
     private function insertElementToBuffer($element, ...$options)
     {
         $option = '';
-        for ($i = 0; $i < count($options); $i++) {
-            if (substr($options[$i], 0, 1) === '@') {
+        for ($i = 0; $i < count($options); $i++)
+        {
+            if (substr($options[$i], 0, 1) === '@')
+            {
                 $option .= ' ' . substr($options[$i], 1);
-            } else {
+            }
+            else
+            {
                 $option .= ' ' . $options[$i] . '="' . $options[++$i] . '"';
             }
         }
@@ -110,11 +118,16 @@ class HtmlBuilder
      */
     public function append($mode = 'min')
     {
-        if ($mode === 'dev') {
+        if ($mode === 'dev')
+        {
             var_dump($this->buffer);
-        } else if ($mode === 'prod') {
+        }
+        else if ($mode === 'prod')
+        {
             // TODO: 実装
-        } else if ($mode === 'min') {
+        }
+        else if ($mode === 'min')
+        {
             echo implode('', $this->buffer);
         }
     }
